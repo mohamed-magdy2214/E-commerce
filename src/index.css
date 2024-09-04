@@ -1,0 +1,125 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:#0F67B1;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+
+body{
+    font-family: var(--font-family) !important;
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+.product {
+    border-radius: 8px;
+    position: relative;
+}
+.product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+.product .btn 
+{
+    transition: transform 0.8s , opacity 0.8s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+.network{
+    position: fixed;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+}
+.border-btn {
+    border: 1px solid var(--main-color);
+    transition: all 0.5s;
+}
+.border-btn:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+.card-shadow {
+    transition: all 0.5s;
+}
+.card-shadow:hover {
+    box-shadow: 1px 1px 10px var(--main-color);
+}
+.nav-link.active {
+    background-color: var(--main-color);
+    border-radius: 8px;
+    color: white !important;
+}
+.text {
+    color: #6e6d6d;
+}
+input {
+    border: 1px solid #d8d8d8cc;
+}
+input:focus {
+    outline: none;
+    border: none;
+}
+.content {
+    border-top: 1px solid #d8d8d8cc;
+    border-bottom: 1px solid #d8d8d8cc;
+}
+.img-logo {
+    width: 40px;
+}
+.border-btn {
+    border: 1px solid var(--main-color);
+}
+.item-num {
+    position: relative;
+}
+.num-item {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 2px;
+}
+
+.fa-heart {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+}
