@@ -62,7 +62,7 @@ export default function Cart() {
                 visible={true}
               />
       </div> :  cartDetails? <div className="w-75 mx-auto p-2 bg-main-light my-3 rounded-2">
-      <div className="d-flex justify-content-between align-items-center">
+      <div className="d-flex justify-content-between align-items-center" id="cart">
         <div className=' w-25'>
           <h2 className="h3">Shop Cart:</h2>
           <h3 className="h6 text-main fw-bold mb-3">Totla Price: {cartDetails.data.totalCartPrice} EGP</h3>
